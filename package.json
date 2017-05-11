@@ -1,0 +1,48 @@
+{
+  "name": "bee-ts-react-demo",
+  "version": "0.6.9",
+  "private": true,
+  "scripts": {
+    "dev": "bees server",
+    "start": "bees server",
+    "build": "rm -rf dist && bees build",
+    "build:dll": "bees build-dll",
+    "test": "bees test",
+    "lint": "eslint --ext .js src test",
+    "precommit": "npm run lint"
+  },
+  "devDependencies": {
+    "@types/enzyme": "^2.8.0",
+    "@types/jest": "^19.2.3",
+    "@types/node": "^7.0.18",
+    "@types/react": "15.0.24",
+    "@types/react-dom": "^15.5.0",
+    "@types/react-redux": "^4.4.40",
+    "babel-core": "^6.24.1",
+    "babel-eslint": "^7.1.1",
+    "babel-loader": "^7.0.0",
+    "babel-plugin-react-require": "^3.0.0",
+    "babel-preset-react": "^6.23.1",
+    "enzyme": "^2.8.2",
+    "eslint": "^3.14.0",
+    "eslint-config-airbnb": "^14.0.0",
+    "eslint-friendly-formatter": "^2.0.7",
+    "eslint-loader": "1.7.1",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jsx-a11y": "^3.0.2",
+    "eslint-plugin-react": "^6.9.0",
+    "mockjs": "^1.0.1-beta3",
+    "qs": "6.4.0",
+    "tslint": "^5.2.0",
+    "tslint-loader": "^3.5.3",
+    "tslint-react": "^3.0.0",
+    "typescript": "^2.3.0",
+    "webpack": "^2.5.1"
+  },
+  "dependencies": {
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2",
+    "react-redux": "^5.0.2",
+    "redux": "^3.6.0"
+  }
+}

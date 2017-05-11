@@ -1,0 +1,34 @@
+{
+  "use": "react",
+  "entry": "src/index.tsx",
+  "style": ["css", "less"],
+  "publicPath": "/",
+  "extraBabelPresets": [
+    "react"
+  ],
+  "extraBabelPlugins": [
+    "react-require"
+  ],
+  "disableCSSModules": false,
+  "imgCompress": true,
+  "autoprefixer": null,
+  "externals": [],
+  "multipage": true,
+  "define": null,
+  "proxy": {
+    "/api": {
+      "target": "http://jsonplaceholder.typicode.com/",
+      "changeOrigin": true,
+      "pathRewrite": { "^/api" : "" }
+    }
+  },
+  "env": {
+    "development": {
+      "cssSourceMap": false
+    },
+    "production": {
+      "cssSourceMap": true,
+      "analyze": true
+    }
+  }
+}
